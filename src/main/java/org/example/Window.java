@@ -24,8 +24,7 @@ public class Window extends JFrame {
     public static final int HEIGHT = 256;
 
     public Window () {
-        BufferedImage bufferedImage = new BufferedImage(WIDTH,HEIGHT,BufferedImage.TYPE_INT_RGB);
-        randomBufferedImage();
+        BufferedImage bufferedImage = randomBufferedImage();
         this.setResizable(false);
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         this.setVisible(true);
